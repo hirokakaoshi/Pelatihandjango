@@ -1,0 +1,13 @@
+<html>
+  <body>
+      <form method='POST'>
+         <table align=center>
+            {{ form }}
+            {% csrf_token %}
+            <tr>
+              <td colspan ="2"><input type="submit" value="Buat"></td>
+            </tr>
+         </table>
+      </form>
+  </body>
+</html>

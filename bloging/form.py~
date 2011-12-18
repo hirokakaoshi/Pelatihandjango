@@ -1,0 +1,7 @@
+#membuat form otomatis supaya tampilan lebih enak ahhaha
+from django.form import ModelForm
+from bloging.models import Artikel
+
+class FormArtikel(ModelForm):
+    class Meta :
+        model = Artikel

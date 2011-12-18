@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h1>Hallow barudak Django</h1>
+    {% for artikel in Gudang_Artikel%}
+      <p>
+        <h2><a href="{% url blog_baca artikel.id %}">{{ artikel.judul }}</a></h2>
+        Diposting {{ artikel.tgl_post|timesince}} yang lalu<br>
+        {{artikel.isi|truncatewords:10}}
+      </p>
+    {% endfor %}
+  </body>
+</html>
